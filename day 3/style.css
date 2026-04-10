@@ -20,3 +20,27 @@ label {
     color:black;
 }
 
+#city {
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#credentials > input {
+    padding : 8px;
+    margin-bottom: 20px;
+    color: #555;
+}
