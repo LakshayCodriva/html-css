@@ -1,0 +1,42 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+header > nav {
+    display: flex;
+    padding-top:30px;
+    padding-right: 20px;
+    font-size:x-large;
+    gap: 15px;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding:10px;
+    margin-bottom:10px;
+} 
+
+section > p {
+    font-size: large;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+article {
+    background-color: beige;
+    font-size: large;
+    padding:10px;
+    font-family: Arial, sans-serif;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}

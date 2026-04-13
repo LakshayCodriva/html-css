@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lakshay Sharma">
+    <meta name="keywords" content="HTML CSS Forms validation patterns">
+    <meta name="description" content="Forms validation using plain HTML and CSS validation and patterns">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Registration-Form</title>
+</head>
+
+<body background="https://cdn.pixabay.com/animation/2025/02/06/17/23/17-23-54-364_512.gif">
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <main id="form-container">
+        <form action="https://bouncyballs.org/" method="post">
+
+            <section id="credentials">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <!-- I used Chatgpt to generate the regex pattern for email and password validation -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="test@codriva.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password(8-16)"
+                    title="Password must be 8-16 characters long and include at least one lowercase letter, one uppercase letter, one digit, and one special character"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" required>
+            </section>
+
+
+            <section>
+                <label for="city">Choose city:</label>
+                <select id="city" name="city" required>
+                    <option value="none-selected">Select a city</option>
+                    <option value="New York">New York</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+            </section>
+
+
+            <section>
+                <label for="gender">Gender:</label>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    Female
+                </label>
+            </section>
+            <br>
+
+            <section>
+                <label for="preferences">Programming Skills:</label>
+                <label for="Python">
+                    <input type="checkbox" id="Python" name="skills[]" value="Python">
+                    Python
+                </label>
+
+                <label for="JavaScript">
+                    <input type="checkbox" id="JavaScript" name="skills[]" value="JavaScript">
+                    JavaScript
+                </label>
+
+                <label for="Java">
+                    <input type="checkbox" id="Java" name="skills[]" value="Java">
+                    Java
+                </label>
+            </section>
+            <br>
+
+            <section>
+                <button type="reset" id="reset-btn">
+                    Reset
+                </button>
+
+                <button type="submit" id="submit-btn">
+                    Register
+                </button>
+            </section>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Registration Form. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

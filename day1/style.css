@@ -28,3 +28,12 @@ li {
     font-family: 'Arial';
     margin-bottom: 10px;
 }
+
+
+section {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}

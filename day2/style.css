@@ -50,11 +50,13 @@ td,th {
     padding: 8px;
 }
 
-#Blog-End {
+footer {
     text-align: center;
     color: #555;
     font-family: 'Arial';
     font-size: 18px;
+    max-width: 950px;
+    margin: 20px auto;
 }
 
 .section-inside-blog {
@@ -69,3 +71,4 @@ caption {
     text-align: left;
     padding: 10px;
 }
+
